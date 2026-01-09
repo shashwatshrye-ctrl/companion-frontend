@@ -946,7 +946,7 @@ button {
 .profile h2 {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #000;
 }
 
@@ -955,33 +955,56 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-text h2 {
+    margin-bottom: 24px;
 }
 
 .profile-text p {
     font-size: 16px;
     color: #666;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     line-height: 1.8;
+}
+
+.profile-text p:last-child {
+    margin-bottom: 0;
 }
 
 .profile-images {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.profile-images img {
-    border-radius: 12px;
-    max-width: 100%;
+.profile-images img:first-child {
+    max-width: 280px;
     height: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.profile-images img:last-child {
+    max-width: 240px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .profile-images img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(255, 107, 107, 0.2);
 }
 
 /* CTA Section */
@@ -1137,6 +1160,11 @@ button {
 
     .profile-content {
         grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .profile h2 {
+        font-size: 32px;
     }
 
     .functions h2,
@@ -1146,8 +1174,7 @@ button {
     .interaction-mode h2,
     .chat-example h2,
     .specifications h2,
-    .cta h2,
-    .profile h2 {
+    .cta h2 {
         font-size: 32px;
     }
 
@@ -1163,6 +1190,22 @@ button {
 
     .profile-images {
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-images img:first-child {
+        max-width: 100%;
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+    }
+
+    .profile-images img:last-child {
+        max-width: 100%;
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
     }
 }
 
@@ -1819,6 +1862,41 @@ button {
 
     .nav-menu {
         gap: 20px;
+    }
+
+    .profile {
+        padding: 50px 15px;
+    }
+
+    .profile h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .profile-text p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .profile-images {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .profile-images img:first-child {
+        max-width: 90vw;
+        width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .profile-images img:last-child {
+        max-width: 90vw;
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
     }
 }
 
