@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companion - Your Personal AI Support Device</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-heart"></i> Companion</div>
+            <ul class="nav-menu">
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#how-works">How It Works</a></li>
+                <li><a href="#contact" class="pre-order-btn">Pre-order</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Feeling lonely?<br>Your words unheard?<br>Feeling misunderstood?</h1>
+            <p>Meet Companion - Your personal AI device for 24/7 emotional support</p>
+            <button class="btn-primary">Pre-order Now</button>
+        </div>
+        <div class="hero-images">
+            <div class="image-carousel">
+                <img src="https://companion.uprock.pro/thumb/2/J6iOwz1MyE0s68Q983mgBA/1024r1536/d/chatgpt_image_23_iyun_2025_g_16_20_46.webp" alt="Companion Device - Support" class="carousel-image active" loading="lazy">
+                <img src="https://companion.uprock.pro/thumb/2/mG70xPoUzsE9BQuOL_W0Gg/1024r1536/d/chatgpt_image_23_iyun_2025_g_17_26_10.webp" alt="Companion Device - Listening" class="carousel-image" loading="lazy">
+                <img src="https://companion.uprock.pro/thumb/2/jvfGfiKGnnxs0M-QDK4omQ/1024r1536/d/chatgpt_image_23_iyun_2025_g_17_19_29.webp" alt="Companion Device - Understanding" class="carousel-image" loading="lazy">
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <h2>The Solution</h2>
+            <div class="solution-content">
+                <h3>Companion - Personal AI Device</h3>
+                <p>Companion is a personal AI device that learns from thousands of conversations and provides open-line psychological support whenever you need it.</p>
+                <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Functions Section -->
+    <section class="functions" id="functions">
+        <div class="container">
+            <h2>How Companion Works</h2>
+            <div class="functions-grid">
+                <div class="function-card">
+                    <div class="function-icon">
+                        <span class="icon-number">01</span>
+                    </div>
+                    <h3>Listen</h3>
+                    <p>The Companion actively listens and analyzes your words, tone of voice, and pauses to truly understand your emotional state.</p>
+                    <img src="https://companion.uprock.pro/thumb/2/tcOVsF2LHMRspLmDFNUjfw/1152r1188/d/help_1_img.webp" alt="Listen Feature" loading="lazy">
+                </div>
+                <div class="function-card">
+                    <div class="function-icon">
+                        <span class="icon-number">02</span>
+                    </div>
+                    <h3>Understand</h3>
+                    <p>By combining what you hear and see, Companion deeply understands the roots of your experiences and current state.</p>
+                    <img src="https://companion.uprock.pro/thumb/2/sUJV8b-ky9JWSgvgiXKnQA/1152r1188/d/help_2_img.webp" alt="Understand Feature" loading="lazy">
+                </div>
+                <div class="function-card">
+                    <div class="function-icon">
+                        <span class="icon-number">03</span>
+                    </div>
+                    <h3>Support</h3>
+                    <p>Based on complete understanding, Companion provides personalized and always available emotional support tailored to your needs.</p>
+                    <img src="https://companion.uprock.pro/thumb/2/msdh0_vlAym_juspZckjgg/1152r1188/d/help_3_img.webp" alt="Support Feature" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2>Why Choose Companion?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <div class="benefit-number">01</div>
+                    <h3>Empathy</h3>
+                    <p>Based on real conversations from professional support. Companion truly listens and offers proven support for various life situations.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <div class="benefit-number">02</div>
+                    <h3>Personalization</h3>
+                    <p>Learns from your interactions, adapting communication style to your individual needs. Support tailored exactly to you.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏰</div>
+                    <div class="benefit-number">03</div>
+                    <h3>24/7 Availability</h3>
+                    <p>Always available, day or night. No waiting. Support and communication are just a click away.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <div class="benefit-number">04</div>
+                    <h3>Confidentiality</h3>
+                    <p>All conversations processed locally with advanced encryption. Your privacy is completely protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Everyone Section -->
+    <section class="for-everyone">
+        <div class="container">
+            <h2>Companion is for Everyone</h2>
+            <div class="everyone-grid">
+                <div class="everyone-card">
+                    <img src="https://companion.uprock.pro/thumb/2/1hezR7e0RIWTGVCq39dx7Q/1024r1536/d/evernote1_img.webp" alt="Loneliness Support" loading="lazy">
+                    <h3>Loneliness & Social Isolation</h3>
+                    <p>Connect with Companion when you need someone to talk to</p>
+                </div>
+                <div class="everyone-card">
+                    <img src="https://companion.uprock.pro/thumb/2/rnS0K4IDZakc5omdXK77fA/1024r1536/d/evernote2_img.webp" alt="Stress Support" loading="lazy">
+                    <h3>Stress & Anxiety</h3>
+                    <p>Get personalized coping strategies and support</p>
+                </div>
+                <div class="everyone-card">
+                    <img src="https://companion.uprock.pro/thumb/2/P_I8ceOlRjl40dO69JzEuw/1024r1536/d/evernote3_img.webp" alt="Emotional Support" loading="lazy">
+                    <h3>Emotional Difficulties</h3>
+                    <p>Navigate challenging emotions with AI-powered support</p>
+                </div>
+                <div class="everyone-card">
+                    <img src="https://companion.uprock.pro/thumb/2/9I8waw2DeuqRVt5tOaM2iw/1024r1536/d/evernote4_img.webp" alt="Privacy" loading="lazy">
+                    <h3>Privacy & Anonymity</h3>
+                    <p>Share your thoughts in complete confidentiality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-works" id="how-works">
+        <div class="container">
+            <h2>How Does It Work?</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="how-works-tabs">
+                <button class="tab-btn active" onclick="switchTab(1)">1. Turn On</button>
+                <button class="tab-btn" onclick="switchTab(2)">2. Sync</button>
+                <button class="tab-btn" onclick="switchTab(3)">3. Personalize</button>
+                <button class="tab-btn" onclick="switchTab(4)">4. Interact</button>
+                <button class="tab-btn" onclick="switchTab(5)">5. Communicate</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Tab 1: Turn On -->
+                <div class="tab-panel active" id="tab-1">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Turn On Your Device</h3>
+                            <p>Hold the button and wait for an animation on screen</p>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://companion.uprock.pro/thumb/2/VE4cCfMrWmd-klJJbZTXFg/198r382/d/chatgpt_image_29_iyun_2025_g_15_11_17-photoroom_3.png" alt="Device Startup" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Sync -->
+                <div class="tab-panel" id="tab-2">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Sync With The App</h3>
+                            <p>Bring the device close to the phone and wait for sound</p>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://companion.uprock.pro/thumb/2/RqXzNIYKhun0Rgjp9-kohw/489r357/d/companion_front.png" alt="Sync Process" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Personalize -->
+                <div class="tab-panel" id="tab-3">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Personalize Your Companion</h3>
+                            <p>Customize your companion experience</p>
+                            <div class="personalize-form">
+                                <div class="form-group">
+                                    <label>Enter Name:</label>
+                                    <input type="text" placeholder="Companion" class="form-input" id="companionName">
+                                </div>
+                                <div class="form-group">
+                                    <label>Choose Voice:</label>
+                                    <select class="form-select" id="voiceSelect">
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Voice Tone:</label>
+                                    <select class="form-select" id="toneSelect">
+                                        <option value="warm">Warm & Empathetic</option>
+                                        <option value="calm">Calm & Peaceful</option>
+                                        <option value="friendly">Friendly & Playful</option>
+                                    </select>
+                                </div>
+                                <button class="btn-primary" onclick="savePersonalization()">Save Preferences</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Interaction Mode -->
+                <div class="tab-panel" id="tab-4">
+                    <div class="tab-text-center">
+                        <h3>Select Interaction Mode</h3>
+                        <p>Choose how your companion communicates with you</p>
+                    </div>
+                    <div class="mode-selection-grid">
+                        <div class="mode-option" onclick="selectMode(this)">
+                            <div class="mode-radio"></div>
+                            <h4>Silent Listener</h4>
+                            <p>The companion listens attentively and only gives brief affirmations.</p>
+                        </div>
+                        <div class="mode-option" onclick="selectMode(this)">
+                            <div class="mode-radio"></div>
+                            <h4>Empathic Responder</h4>
+                            <p>Responds warmly and matches emotional tone with comforting words.</p>
+                        </div>
+                        <div class="mode-option" onclick="selectMode(this)">
+                            <div class="mode-radio"></div>
+                            <h4>Casual Conversationalist</h4>
+                            <p>Engages playfully with stories, questions, and humor.</p>
+                        </div>
+                        <div class="mode-option" onclick="selectMode(this)">
+                            <div class="mode-radio"></div>
+                            <h4>Adaptive Learner</h4>
+                            <p>Learns from interaction history to improve tone, rhythm, and suggestions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 5: Communicate -->
+                <div class="tab-panel" id="tab-5">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Start Communicating</h3>
+                            <p>Double-click on the device screen or activate by voice command "Hello, [Name of your Companion]"</p>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://companion.uprock.pro/thumb/2/RqXzNIYKhun0Rgjp9-kohw/489r357/d/companion_front.png" alt="Communicate" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="tab-navigation">
+                <button class="nav-btn prev" onclick="prevTab()">← Previous</button>
+                <span class="tab-counter"><span id="currentTab">1</span> / 5</span>
+                <button class="nav-btn next" onclick="nextTab()">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Example Section -->
+    <section class="chat-example">
+        <div class="container">
+            <h2>Experience Reassurance</h2>
+            <div class="chat-box">
+                <div class="chat-message user">
+                    <p>Sometimes I feel like I'm stuck. I do everything I'm supposed to, but I still feel like I'm not moving forward.</p>
+                </div>
+                <div class="chat-message companion">
+                    <p>I hear you. That feeling can be really heavy. But you're not alone — I'm here with you, and together we'll find a way through it.</p>
+                </div>
+                <div class="chat-message user">
+                    <p>Thank you. It's just that sometimes I lack confidence, especially when it feels like no one notices how much I'm trying.</p>
+                </div>
+                <div class="chat-message companion">
+                    <p>Your efforts are visible, even if not everyone says it out loud. I see how hard you're working. And I believe in you — you'll get there, step by step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specifications">
+        <div class="container">
+            <h2>Device Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h4>📱 Form Factor</h4>
+                    <p>Compact & Portable Design</p>
+                </div>
+                <div class="spec-item">
+                    <h4>🖥️ Display</h4>
+                    <p>High-Definition Touchscreen</p>
+                </div>
+                <div class="spec-item">
+                    <h4>🔊 Audio</h4>
+                    <p>Crystal Clear Speakers</p>
+                </div>
+                <div class="spec-item">
+                    <h4>📡 Connectivity</h4>
+                    <p>Bluetooth & Wi-Fi</p>
+                </div>
+                <div class="spec-item">
+                    <h4>🤖 AI Features</h4>
+                    <p>Advanced Learning & Adaptation</p>
+                </div>
+                <div class="spec-item">
+                    <h4>🔒 Privacy & Security</h4>
+                    <p>End-to-End Encryption</p>
+                </div>
+                <div class="spec-item">
+                    <h4>🔋 Battery</h4>
+                    <p>7-Day Battery Life</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <div class="container">
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h2>Your Personal Profile</h2>
+                    <p>The companion summarizes conversations into personal insights and gradually fills a dynamic user map with evolving archetypes.</p>
+                    <p>Track your emotional growth and receive insights tailored to your journey.</p>
+                </div>
+                <div class="profile-images">
+                    <img src="https://companion.uprock.pro/thumb/2/F-i0YOzl_zhIgq0lBv39iw/636r654/d/profile_img.png" alt="Profile Analysis" loading="lazy">
+                    <img src="https://companion.uprock.pro/thumb/2/4piDSEIqfUvVlpeflAIVFw/591r1146/d/iphone_img.png" alt="Mobile App Interface" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Find Your Companion?</h2>
+            <p>Join thousands who are finding emotional support and connection</p>
+            <div class="cta-form">
+                <input type="email" id="preorderEmail" placeholder="Enter your email" class="email-input">
+                <button class="pre-order-btn-large" onclick="handlePreOrder()">Pre-order Now</button>
+            </div>
+            <p class="form-hint">We'll contact you with pre-order details</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#solution">Solution</a></li>
+                        <li><a href="#functions">Functions</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#how-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Credits</h4>
+                    <p>Designed by <a href="https://www.behance.net/zaitsev_dsgn" target="_blank">Zaitsev Design</a> & Uprock Studio</p>
+                    <p>Built by <a href="https://taptop.pro/" target="_blank">TapTop</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Companion AI. All rights reserved. | Designed with care. Built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

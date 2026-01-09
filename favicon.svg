@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Heart icon with Companion branding -->
+  <defs>
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF5252;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Heart shape -->
+  <path d="M32 56 C 8 42, 4 28, 4 20 C 4 12, 10 8, 16 8 C 22 8, 28 14, 32 18 C 36 14, 42 8, 48 8 C 54 8, 60 12, 60 20 C 60 28, 56 42, 32 56 Z" 
+        fill="url(#heartGradient)" 
+        stroke="none"/>
+  
+  <!-- Inner highlight -->
+  <path d="M32 48 C 14 37, 11 26, 11 20 C 11 15, 14 12, 18 12 C 22 12, 26 16, 30 20 C 28 18, 26 16, 24 14 C 22 17, 20 21, 20 24 C 20 30, 24 38, 32 48 Z" 
+        fill="rgba(255,255,255,0.3)" 
+        stroke="none"/>
+</svg>
