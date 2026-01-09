@@ -88,6 +88,12 @@ function savePersonalization() {
     localStorage.setItem('companionVoice', voice);
     localStorage.setItem('companionTone', tone);
 
+    // Update the voice command name display
+    const voiceCommandElement = document.getElementById('voiceCommandName');
+    if (voiceCommandElement) {
+        voiceCommandElement.textContent = name;
+    }
+
     Toast.show(`✨ Preferences saved! Your companion "${name}" is ready!`, 'success', 3000);
 }
 
@@ -107,6 +113,11 @@ function loadPersonalizationPrefs() {
 
     if (savedTone && document.getElementById('toneSelect')) {
         document.getElementById('toneSelect').value = savedTone;
+    }
+
+    // Update the voice command name display
+    if (savedName && document.getElementById('voiceCommandName')) {
+        document.getElementById('voiceCommandName').textContent = savedName;
     }
 }
 
