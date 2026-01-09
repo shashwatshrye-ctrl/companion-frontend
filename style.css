@@ -136,7 +136,7 @@ button {
 
 .pre-order-btn {
     background: #FF6B6B;
-    color: #fff;
+    color: #fff !important;
     padding: 10px 24px;
     border-radius: 6px;
     font-size: 14px;
@@ -146,6 +146,7 @@ button {
 
 .pre-order-btn:hover {
     background: #FF5252;
+    color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
 }
@@ -1088,6 +1089,19 @@ button {
     transform: translateX(5px);
 }
 
+/* Disable Information section links */
+.footer-section:nth-child(2) a {
+    pointer-events: none;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.footer-section:nth-child(2) a:hover {
+    color: #fff;
+    transform: none;
+}
+
 .footer-section p {
     font-size: 14px;
     color: #bbb;
@@ -1778,6 +1792,18 @@ button {
 }
 
 .footer-section a:hover {
+    color: #fff;
+}
+
+/* Disable Information section links */
+.footer-section:nth-child(2) a {
+    pointer-events: none;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.footer-section:nth-child(2) a:hover {
     color: #fff;
 }
 
