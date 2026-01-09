@@ -1,8 +1,4 @@
-// Companion Website - Enhanced JavaScript with Advanced Features
 
-// ============================================
-// TAB SYSTEM FOR "HOW DOES IT WORK"
-// ============================================
 
 let currentTabIndex = 1;
 
